@@ -31,4 +31,4 @@ def main(operations_path='operations.json', oper_cnt=5):
 
 
 if __name__ == '__main__':
-    x = main()
+    main()
