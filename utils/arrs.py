@@ -20,8 +20,6 @@ def dicts_validation(checked_dict):
                 del checked_dict[fail_index]
             elif str(ex_attr) == "'from'":
                 checked_dict[fail_index]['from'] = "Скрытый счет "
-            else:
-                print(f"Error: index: {fail_index}, key: {ex_attr}")
 
     return checked_dict
 

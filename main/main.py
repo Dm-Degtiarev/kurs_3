@@ -1,13 +1,13 @@
 from utils.arrs import *
 
 
-def main(oper_cnt=5):
+def main(operations_path='operations.json', oper_cnt=5):
     """
     Выводит в консоль информацию по
     заданному кол-ву успешных транзакций
     (по умолчанию - 5шт)
     """
-    operations = dicts_open_and_sort('date')
+    operations = dicts_open_and_sort(sort_attr='date', json_file=operations_path)
     for operation in operations:
         if oper_cnt == 0:
             break
@@ -31,4 +31,4 @@ def main(oper_cnt=5):
 
 
 if __name__ == '__main__':
-    main()
+    x = main()
